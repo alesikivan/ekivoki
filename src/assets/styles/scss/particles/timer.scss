@@ -1,0 +1,27 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.timer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+
+  .time {
+    min-width: 76px;
+    border: 1px solid hsla(0,0%,80%,.548);
+    padding: 4px 5px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    span {
+      &:first-child, &:last-child {
+        min-width: 30px;
+        @include flex;
+      }
+    }
+  }
+}

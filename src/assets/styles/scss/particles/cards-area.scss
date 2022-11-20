@@ -1,0 +1,34 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.cards-area {
+  @include flex-column;
+  gap: 10px;
+  align-items: flex-start;
+
+  .buttons {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background-color: #ccccccab;
+      font-size: 1em;
+
+      &.special {
+        width: 100%;
+      }
+    }
+  }
+
+  .card {
+    height: auto;
+    max-width: 300px;
+    cursor: ns-resize;
+
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.cube {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  button {
+    background: none;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+
+    img {
+      height: auto;
+      max-width: 35px;
+
+      &.rotated-1 {
+        transform: rotate(0);
+      }
+      
+      &.rotated-2 {
+        transform: rotate(90deg);
+      }
+      
+      &.rotated-3 {
+        transform: rotate(180deg);
+      }
+      
+      &.rotated-4 {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  input {
+    height: 40px;
+    width: 37px;
+
+    @include flex-column;
+  }
+}

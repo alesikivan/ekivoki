@@ -1,0 +1,100 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.game-area {
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .game-block {
+    min-height: 100px;
+    width: 100px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #cccccc2e;
+
+    @include flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    &.auction {
+      border-color: #2192FF;
+      background-color: #2192ff36;
+      .block-number {
+        border-color: #2192FF;
+        color: #2192FF;
+        background-color: #2192ff36;
+      }
+    } 
+    
+    &.harmful {
+      border-color: #7743DB;
+      background-color: #7743db40;
+      .block-number {
+        border-color: #7743DB;
+        color: #7743DB;
+        background-color: #7743db40;
+      }
+    }    
+
+    &.karma {
+      border-color: #EB6440;
+      background-color: #eb644033;
+      .block-number {
+        border-color: #EB6440;
+        color: #EB6440;
+        background-color: #eb644033;
+      }
+    }
+
+    &.entropy {
+      border-color: #00ABB3;
+      background-color: #00abb32e;
+      .block-number {
+        border-color: #00ABB3;
+        color: #00ABB3;
+        background-color: #00abb32e;
+      }
+    }
+
+    .preview {
+      height: auto;
+      max-width: 55px;
+      z-index: 1;
+
+      position: absolute;
+    }
+
+    .block-number {
+      font-size: 0.9em;
+      padding: 0 4px;
+      border: 2px solid #ccc;
+      border-bottom: none;
+      border-radius: 3px 3px 0 0;
+      font-family: 'Bold';
+      background-color: #cccccc2e;
+
+      top: -24px;
+      position: absolute;
+
+      @include flex;
+    }
+
+    .player {
+      height: 25px;
+      width: 25px;
+      background-color: #0D4C92;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 0.9em;
+      z-index: 4;
+
+      @include flex-column;
+    }
+  }
+}

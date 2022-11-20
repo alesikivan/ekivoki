@@ -1,0 +1,95 @@
+.game-area {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.game-area .game-block {
+  min-height: 100px;
+  width: 100px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #cccccc2e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.game-area .game-block.auction {
+  border-color: #2192FF;
+  background-color: #2192ff36;
+}
+.game-area .game-block.auction .block-number {
+  border-color: #2192FF;
+  color: #2192FF;
+  background-color: #2192ff36;
+}
+.game-area .game-block.harmful {
+  border-color: #7743DB;
+  background-color: #7743db40;
+}
+.game-area .game-block.harmful .block-number {
+  border-color: #7743DB;
+  color: #7743DB;
+  background-color: #7743db40;
+}
+.game-area .game-block.karma {
+  border-color: #EB6440;
+  background-color: #eb644033;
+}
+.game-area .game-block.karma .block-number {
+  border-color: #EB6440;
+  color: #EB6440;
+  background-color: #eb644033;
+}
+.game-area .game-block.entropy {
+  border-color: #00ABB3;
+  background-color: #00abb32e;
+}
+.game-area .game-block.entropy .block-number {
+  border-color: #00ABB3;
+  color: #00ABB3;
+  background-color: #00abb32e;
+}
+.game-area .game-block .preview {
+  height: auto;
+  max-width: 55px;
+  z-index: 1;
+  position: absolute;
+}
+.game-area .game-block .block-number {
+  font-size: 0.9em;
+  padding: 0 4px;
+  border: 2px solid #ccc;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  font-family: "Bold";
+  background-color: #cccccc2e;
+  top: -24px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.game-area .game-block .player {
+  height: 25px;
+  width: 25px;
+  background-color: #0D4C92;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.9em;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=game-area.css.map */

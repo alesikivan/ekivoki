@@ -1,0 +1,44 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+
+.members-nav {
+  .members {
+    .member {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.active {
+        background-color: #a0e4c994;
+        border: 1px solid #a0e4c994;
+      }
+
+      b {
+        font-family: 'Bold';
+      }
+
+      .steps {
+        display: flex;
+        gap: 4px;
+
+        .add-step {
+          height: 22px;
+          width: 22px;
+          cursor: pointer;
+          border: 1px solid #ccc;
+          font-size: 0.7em;
+          border-radius: 3px;
+          font-family: 'Bold';
+          user-select: none;
+
+          &:hover {
+            background-color: #ccc;
+          }
+
+          @include flex-column;
+        }
+      }
+    }
+  }
+}

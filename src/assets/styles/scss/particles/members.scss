@@ -1,0 +1,42 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.team {
+  width: 100%;
+  @include flex-column;
+
+  .members {
+    min-width: 500px;
+
+    .member {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .form-inline {
+    min-width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    input {
+      width: 100%;
+    }
+
+    button, input {
+      height: 40px;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+
+    &.max {
+      min-width: 500px;
+    }
+  }
+}

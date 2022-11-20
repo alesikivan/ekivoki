@@ -1,0 +1,206 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.main-header {
+  width: 100%;
+  background-color: #ffffffe8;
+  border-bottom: 1px solid $opacityLineColor;
+  padding: 15px $appPadding;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed;
+  z-index: 4;
+
+  .cover {
+    width: 100%;
+    max-width: $maxWidth;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $maxWidth) {
+      min-width: auto;
+    }
+
+    .logo {
+      img {
+        height: auto;
+        max-width: 105px;
+      }
+    }
+
+    a.logo {
+      text-transform: uppercase;
+      background: #ef4f4f;
+      background: linear-gradient(45deg,#ef4f4f 33%,#65C0FF 66%);
+      background: -o-linear-gradient(45deg,#ef4f4f 33%,#65C0FF 66%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0b2349;
+      display: block;
+      font-size: 1.4em;
+      text-align: center;
+      font-family: 'Bold';
+    }
+
+    .navigation-buttons {
+      display: flex;
+      gap: 5px;
+    }
+  
+    ul {
+      display: flex;
+      gap: 25px;
+  
+      li {
+        list-style-type: none;
+        cursor: help;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
+
+        .hint {
+          position: absolute;
+          right: 0;
+          top: 25px;
+          width: 280px;
+          font-size: 0.8em;
+          color: #000;
+          border-radius: 3px;
+          
+          background-color: #ccc;
+          padding: 7px;
+
+          display: none;
+        }
+
+        &.active-item {
+          .hint {
+            display: block;
+          }
+        }
+
+        div {
+          height: 13px;
+          width: 13px;
+          border-radius: 50%;
+          
+          &.auction {
+            background-color: #2192FF;
+          } 
+          
+          &.harmful {
+            background-color: #7743DB;
+          }    
+      
+          &.karma {
+            background-color: #EB6440;
+          }
+      
+          &.entropy {
+            background-color: #00ABB3;
+          }
+        }
+  
+        a {
+          color: $textColor;
+          user-select: none;
+          text-transform: capitalize;
+          font-family: 'Bold';
+  
+          &:hover {
+            color: $appColor;
+          }
+        }
+      }
+    }
+  
+    .special-link {
+      background-color: $appColor;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-family: 'Bold';
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      border: none;
+  
+      &:hover {
+        box-shadow: $blockShahow;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .main-header {
+    padding: 8px 40px;
+    flex-direction: column;
+
+    .cover {
+      ul { 
+        display: none;
+      }
+
+      .special-link {
+        display: none;
+      }
+
+      .menu-button {
+        height: 40px;
+        width: 40px;
+        background: none;
+        border: none; 
+
+        @include flex-column;
+
+        img {
+          height: auto;
+          max-width: 40px;
+        }
+      }
+    }
+
+    .burger-menu {
+      display: flex;
+      margin: 10px 0;
+
+      ul {
+        @include flex-column;
+        gap: 15px;
+    
+        li {
+          list-style-type: none;
+    
+          a {
+            color: $textColor;
+            user-select: none;
+            text-transform: capitalize;
+            font-family: 'Bold';
+            font-size: 1.2em;
+    
+            &:hover {
+              color: $appColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

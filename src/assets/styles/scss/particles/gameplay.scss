@@ -1,0 +1,17 @@
+.gameplay {
+  display: flex;
+  gap: 10px;
+
+  button {
+    width: 100%;
+
+    &.success {
+      background-color: #82CD47;
+    }
+
+    &.error {
+      background-color: #FF6464;
+      color: #fff;
+    }
+  }
+}

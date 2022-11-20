@@ -1,0 +1,16 @@
+.gameplay {
+  display: flex;
+  gap: 10px;
+}
+.gameplay button {
+  width: 100%;
+}
+.gameplay button.success {
+  background-color: #82CD47;
+}
+.gameplay button.error {
+  background-color: #FF6464;
+  color: #fff;
+}
+
+/*# sourceMappingURL=gameplay.css.map */

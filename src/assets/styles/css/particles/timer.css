@@ -1,0 +1,24 @@
+.timer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+.timer .time {
+  min-width: 76px;
+  border: 1px solid rgba(204, 204, 204, 0.548);
+  padding: 4px 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.timer .time span:first-child, .timer .time span:last-child {
+  min-width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=timer.css.map */

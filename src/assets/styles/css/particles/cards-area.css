@@ -1,0 +1,32 @@
+.cards-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.cards-area .buttons {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cards-area .buttons button {
+  background-color: #ccccccab;
+  font-size: 1em;
+}
+.cards-area .buttons button.special {
+  width: 100%;
+}
+.cards-area .card {
+  height: auto;
+  max-width: 300px;
+  cursor: ns-resize;
+}
+.cards-area .card.rotated {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=cards-area.css.map */

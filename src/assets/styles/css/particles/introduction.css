@@ -1,0 +1,19 @@
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro h1 {
+  font-size: 2em;
+}
+.intro h1 b {
+  font-family: "Bold";
+}
+.intro button {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=introduction.css.map */

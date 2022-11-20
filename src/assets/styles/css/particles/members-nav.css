@@ -1,0 +1,36 @@
+.members-nav .members .member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.members-nav .members .member.active {
+  background-color: #a0e4c994;
+  border: 1px solid #a0e4c994;
+}
+.members-nav .members .member b {
+  font-family: "Bold";
+}
+.members-nav .members .member .steps {
+  display: flex;
+  gap: 4px;
+}
+.members-nav .members .member .steps .add-step {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: 0.7em;
+  border-radius: 3px;
+  font-family: "Bold";
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.members-nav .members .member .steps .add-step:hover {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=members-nav.css.map */

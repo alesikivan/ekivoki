@@ -1,0 +1,39 @@
+.cube {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.cube button {
+  background: none;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+.cube button img {
+  height: auto;
+  max-width: 35px;
+}
+.cube button img.rotated-1 {
+  transform: rotate(0);
+}
+.cube button img.rotated-2 {
+  transform: rotate(90deg);
+}
+.cube button img.rotated-3 {
+  transform: rotate(180deg);
+}
+.cube button img.rotated-4 {
+  transform: rotate(270deg);
+}
+.cube input {
+  height: 40px;
+  width: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=cube.css.map */

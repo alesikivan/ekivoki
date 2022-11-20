@@ -1,0 +1,19 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.intro {
+  width: 100%;
+  @include flex-column;
+
+  h1 {
+    font-size: 2em;
+    
+    b {
+      font-family: 'Bold';
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}

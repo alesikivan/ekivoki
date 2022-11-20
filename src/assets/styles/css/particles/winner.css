@@ -1,0 +1,19 @@
+.finished {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.finished span {
+  font-size: 2em;
+}
+.finished span b {
+  font-family: "Bold";
+}
+.finished button {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=winner.css.map */
